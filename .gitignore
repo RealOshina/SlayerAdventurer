@@ -1,0 +1,30 @@
+# Build output
+build/
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+
+# Linux executable
+slayer_adventurer
+
+# VSCode
+.vscode/
+
+# Sublime Text
+*.sublime-workspace
+
+# Backup files
+*~
+*.swp
+
+# Save files
+data/saves/*.sav
+data/saves/*.dat
+
+# Logs
+*.log
