@@ -1,0 +1,12 @@
+{
+    "name": "Adventurer",
+    "hp": 100,
+    "maxhp": 100,
+    "ep": 100,
+    "lp": 100,
+    "oad": 0,
+    "oab": 0,
+    "rp": 0,
+    "accuracy": 50,
+    "rn": 20
+}
