@@ -1,14 +1,14 @@
 CC=gcc
 CFLAGS=-Wall -Wextra -I./src
 
-SRC=$(shell find src -name "*.c")
+SRC := $(wildcard src/*.c src/*/*.c)
 OUT=build/game
 
 all:
 	mkdir -p build
 	$(CC) $(CFLAGS) $(SRC) -o $(OUT)
 
-run:
+run: all
 	./$(OUT)
 
 clean:
