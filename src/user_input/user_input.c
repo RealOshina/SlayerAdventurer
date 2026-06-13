@@ -8,15 +8,17 @@ char* input_char(char *request) {
     printf("%s", request);
 
     char input[40];
-    char* data = malloc(sizeof(input));
+	char* data = malloc(40);
 
     while (fgets(input, sizeof(input), stdin)) {
-        if (sscanf(input, "%s", data) == 1) {
+        if (sscanf(input, "%39s", data) == 1) {
             return data;
         } else {
             printf(REDBOLD "Invalid Input.\n\n" RESET);
+			printf("%s", request);
         }
     }
 
-    return '\0';
+    free(data);
+    return NULL;
 }
